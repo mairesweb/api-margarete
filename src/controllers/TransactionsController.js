@@ -145,7 +145,9 @@ module.exports = {
 
     const total = receitas + despesas;
 
-    return res.json({ receitas, despesas, total });
+    const flag = "ok";
+
+    return res.json({ receitas, despesas, total, flag });
   },
 
   async store(req, res) {
